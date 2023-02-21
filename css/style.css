@@ -1,0 +1,17 @@
+*{ box-sizing:border-box;}
+body{
+    margin:0;
+    padding:0;
+    font-family: 'notoSansKr', sans-serif;
+    font-size:16px;
+}
+.container{
+    width:800px;
+    max-width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    background-image: linear-gradient( to right, #2f77b3, #61bbdc);
+    color:#fff;
+    position:relative;
+    padding:40px 20px;
+}
