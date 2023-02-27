@@ -4,14 +4,131 @@ body{
     padding:0;
     font-family: 'notoSansKr', sans-serif;
     font-size:16px;
+    overflow-x:hidden;
 }
 .container{
     width:800px;
+    min-width:100%;
+    height:100%;
     max-width:100%;
     margin-left:auto;
     margin-right:auto;
-    background-image: linear-gradient( to right, #2f77b3, #61bbdc);
+    background-image: url(../images/cloud.png),
+                      linear-gradient( 180deg, #2f77b3, #61bbdc);
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position: center bottom;
     color:#fff;
     position:relative;
     padding:40px 20px;
+}
+.searchbox span{
+    font-size:2em;
+    cursor:pointer;
+    margin-bottom:0.5em;
+}
+.cityname{
+    font-size:1.2em;
+}
+.time{
+    font-weight:300;
+}
+.nowtemp i{
+    font-size:5.5em;
+    color:#fcfc00;
+}
+.desc{
+    font-size:1.5em;
+}
+.temp{
+    font-size:5em;
+    font-weight:500;
+    letter-spacing:-5px;
+    line-height:1;
+    margin-top:20px;
+}
+.min-temp{
+    padding-right:5px;
+    border-right:1px solid #fff;
+}
+.max-temp{
+    padding-left:5px;
+}
+.txt-shadow{
+    text-shadow: 1px 0 1px #fff, 
+                 0 1px 1px #fff,
+                 -1px 0 1px #fff,
+                 0 -1px 1px #fff;  
+}
+.ntemp{
+    text-align:center;
+}
+.ntemp h1{
+    font-size:1.3em;
+}
+.wi-icon{
+    margin:1em 0 0.5em 0;
+}
+.wi-icon i{
+    font-size:1.5em;
+}
+.wi-text{
+    font-size:0.9em;
+    font-weight:300;
+    text-align:left;
+}
+
+.twotemp{
+    margin:2px -10px 0px;
+    padding:20px;
+    background:rgba(0,0,0,0.3);
+}
+.twotemp.twotemp-title{
+    margin-top:20px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    font-size:1.3em;
+    font-weight:700;
+}
+.twotemp.twotemp-body{
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;  
+}
+.twotemp-body ul{
+    display:flex;
+    width:100%;
+    flex-wrap: wrap;
+}
+.twotemp-body ul li{
+    width: 50%;
+}
+.threetemp-title{
+   margin-top:8px;
+   border-top-left-radius:5px;
+   border-top-right-radius:5px;
+   font-size:1.3em;
+   font-weight:700;
+}
+.threetemp-body{
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;  
+}
+.time-weather{
+    margin:0 15px;
+}
+.days{
+    font-size:0.9em;
+    font-weight:100;
+}
+.times{
+    font-size:1.2em;
+}
+.icons{
+    padding:8px 0;
+}
+.icons i{
+    font-size:2.5em;
+}
+.temps{
+    font-size:1.5em;
 }
